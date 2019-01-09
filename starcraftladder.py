@@ -64,10 +64,10 @@ with open(fname, 'r') as f:
         date = searchObj.group(5) 
         if race == "zerg" and opposing == "terran":
             print ("zvt")  
-        if race == "zerg":
-            print ("z") 
-        if race == "protoss":
-            print ("p") 
+        if race == "zerg" and opposing == "zerg":
+            print ("zvz") 
+        if race == "zerg" and opposing == "protoss":
+            print ("zvp") 
         if searchObj:
               print ("searchObj.group() : ", searchObj.group())
               print ("searchObj.group(1) : race :", searchObj.group(1))
